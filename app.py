@@ -6,7 +6,7 @@ st.set_page_config(page_title="Dashboard Goldenday", layout="wide")
 st.title("📊 Dashboard Profit Goldenday")
 
 # ID Google Sheet Anda
-SHEET_ID = "MASUKKAN_ID_GOOGLE_SHEET_ANDA_DI_SINI"
+SHEET_ID = "19_aTelubx5W7CEjRPZYF_SDKVD8516CkwjRWirhRUac"
 SHEET_NAME = "Sheet1"
 url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}"
 
