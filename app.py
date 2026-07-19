@@ -14,11 +14,14 @@ try:
     df = pd.read_csv(url)
     st.success("Data berhasil dimuat!")
     
-    # Hitung total omzet
-total_omzet = df['total omzet (pendapatan)'].sum()st.metric("Total Omzet Keseluruhan", f"Rp {total_omzet:,}")
+    # Perhitungan total omzet
+    total_omzet = df['total omzet (pendapatan)'].sum()
+    
+    # Menampilkan metrik
+    st.metric("Total Omzet Keseluruhan", f"Rp {total_omzet:,}")
     
     st.write("### Data Harian Anda")
     st.dataframe(df)
     
 except Exception as e:
-    st.error("Gagal memuat data. Pastikan Google Sheet Anda diatur ke 'Anyone with the link can view' dan nama sheet benar.")
+    st.error("Gagal memuat data. Pastikan Google Sheet Anda diatur ke 'Anyone with the link' dan nama sheet adalah 'Sheet1'.")
