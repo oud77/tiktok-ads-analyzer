@@ -15,8 +15,7 @@ try:
     st.success("Data berhasil dimuat!")
     
     # Hitung total omzet
-total_omzet = df['total omzet (pendapatan)'].sum()   
-st.metric("Total Omzet Keseluruhan", f"Rp {total_omzet:,}")
+total_omzet = df['total omzet (pendapatan)'].sum()st.metric("Total Omzet Keseluruhan", f"Rp {total_omzet:,}")
     
     st.write("### Data Harian Anda")
     st.dataframe(df)
